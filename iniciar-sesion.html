@@ -1,0 +1,22 @@
+<div class="pagina" id="iniciar-sesion">
+    <div class="contenedor-formulario">
+        <h2>Iniciar Sesión</h2>
+        <div id="alerta-sesion" class="alerta"></div>
+        <form id="formularioSesion" novalidate>
+            <div class="grupo-formulario">
+                <label>Correo electrónico <span class="obligatorio">*</span></label>
+                <input type="email" id="correo-sesion" placeholder="tu@email.com" required>
+                <span class="mensaje-error" id="correo-sesion-error"></span>
+            </div>
+            <div class="grupo-formulario">
+                <label>Contraseña <span class="obligatorio">*</span></label>
+                <input type="password" id="contrasena-sesion" placeholder="••••••••" required>
+                <span class="mensaje-error" id="contrasena-sesion-error"></span>
+            </div>
+            <button type="submit" class="boton-enviar">Iniciar Sesión</button>
+        </form>
+        <p style="text-align: center; margin-top: 1rem; color: var(--azul-oscuro);">
+            ¿No tienes cuenta? <a href="#" onclick="mostrarPagina('cuenta')" style="color: var(--verde-principal); font-weight: 600; text-decoration: none;">Regístrate aquí</a>
+        </p>
+    </div>
+</div>

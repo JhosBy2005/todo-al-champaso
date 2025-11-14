@@ -1,0 +1,41 @@
+<div class="pagina" id="contacto">
+    <div class="contenedor-formulario">
+        <h2>Contáctanos</h2>
+        <div id="alerta-contacto" class="alerta"></div>
+        <form id="formularioContacto" novalidate>
+            <div class="grupo-formulario">
+                <label>Nombre completo <span class="obligatorio">*</span></label>
+                <input type="text" id="nombre-contacto" placeholder="Tu nombre completo" required>
+                <span class="mensaje-error" id="nombre-contacto-error"></span>
+            </div>
+            <div class="grupo-formulario">
+                <label>Correo electrónico <span class="obligatorio">*</span></label>
+                <input type="email" id="correo-contacto" placeholder="tu@email.com" required>
+                <span class="mensaje-error" id="correo-contacto-error"></span>
+            </div>
+            <div class="grupo-formulario">
+                <label>Teléfono <span class="obligatorio">*</span></label>
+                <input type="tel" id="telefono-contacto" placeholder="999 999 999" required>
+                <span class="mensaje-error" id="telefono-contacto-error"></span>
+            </div>
+            <div class="grupo-formulario">
+                <label>Asunto <span class="obligatorio">*</span></label>
+                <select id="asunto" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="informacion">Información general</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="voluntariado">Voluntariado</option>
+                    <option value="donacion">Donación</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <span class="mensaje-error" id="asunto-error"></span>
+            </div>
+            <div class="grupo-formulario">
+                <label>Mensaje <span class="obligatorio">*</span></label>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <span class="mensaje-error" id="mensaje-error"></span>
+            </div>
+            <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+        </form>
+    </div>
+</div>

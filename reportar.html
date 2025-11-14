@@ -1,0 +1,46 @@
+<div class="pagina" id="reportar">
+    <div class="contenedor-formulario reportar-contenedor">
+        <h2 style="text-align: center; color: var(--azul-oscuro);">Reportar Zona</h2>
+        <div class="reportar-grid">
+            <div class="reportar-mapa">
+                <img src="imagenes/mapa.png" alt="Mapa de Lima">
+            </div>
+            <div class="reportar-form">
+                <div id="alerta-reporte" class="alerta"></div>
+                <form id="formularioReporte" novalidate>
+                    <div class="grupo-formulario">
+                        <label>Distrito <span class="obligatorio">*</span></label>
+                        <select id="distrito" required>
+                            <option value="">Selecciona un distrito</option>
+                            <option value="Lima">Lima</option>
+                            <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                            <option value="Villa María del Triunfo">Villa María del Triunfo</option>
+                            <option value="Comas">Comas</option>
+                            <option value="Villa El Salvador">Villa El Salvador</option>
+                        </select>
+                        <span class="mensaje-error" id="distrito-error"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label>Dirección aproximada <span class="obligatorio">*</span></label>
+                        <input type="text" id="direccion" placeholder="Av. Principal 123" required>
+                        <span class="mensaje-error" id="direccion-error"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label>Descripción del problema <span class="obligatorio">*</span></label>
+                        <textarea id="descripcion" placeholder="Describe la situación de la zona que necesita árboles..." required></textarea>
+                        <span class="mensaje-error" id="descripcion-error"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label>Tu correo <span class="obligatorio">*</span></label>
+                        <input type="email" id="correo-reporte" placeholder="tu@email.com" required>
+                        <span class="mensaje-error" id="correo-reporte-error"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <button type="button" class="boton-subir">📷 Subir foto de evidencia</button>
+                    </div>
+                    <button type="submit" class="boton-enviar">Enviar Reporte</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

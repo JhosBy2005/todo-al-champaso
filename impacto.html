@@ -1,0 +1,66 @@
+<div class="pagina" id="impacto">
+    <div class="impacto-hero">
+        <div class="impacto-contenido">
+            <div class="impacto-texto">
+                <div class="impacto-logo">
+                    <img src="imagenes/logo.png" alt="SeedAir logo pequeño" style="width:72px;">
+                </div>
+                <h2>Impacto Ambiental</h2>
+                <p class="impacto-desc">Resultados acumulados de nuestras campañas de reforestación urbana en Lima. Seguimos plantando, recuperando y mejorando la calidad de vida en los distritos más necesitados.</p>
+                <div class="impacto-stats">
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <img src="imagenes/impacto-arbol.png" alt="Icono árbol">
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="stat-number">5,247</h3>
+                            <p>Árboles sembrados</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <img src="imagenes/impacto-co2.png" alt="Icono CO2">
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="stat-number">156 <span class="small">ton</span></h3>
+                            <p>CO₂ absorbido</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <img src="imagenes/impacto-temperatura.png" alt="Icono temperatura">
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="stat-number-temp">1.5°C</h3>
+                            <p>Reducción promedio de temperatura</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="impacto-meta">
+                    <p><strong>Tasa de supervivencia:</strong> 89% · <strong>Distritos atendidos:</strong> 12 · <strong>Voluntarios activos:</strong> 842</p>
+                </div>
+                <div class="impacto-acciones">
+                    <button class="boton-principal" onclick="mostrarPagina('campanias')">Ver campañas</button>
+                    <button class="boton-secundario" onclick="abrirMapaImpacto()">Ver detalles por distrito</button>
+                </div>
+            </div>
+            <div class="impacto-mapa">
+                <div class="mapa-card" role="button" onclick="abrirMapaImpacto()">
+                    <img src="imagenes/impacto-mapa-lima.png" alt="Mapa de Lima">
+                    <div class="mapa-overlay">
+                        <span>Explora por distrito</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalMapaImpacto" class="modal-mapa" aria-hidden="true">
+        <div class="modal-contenido">
+            <button class="modal-cerrar" onclick="cerrarMapaImpacto()" aria-label="Cerrar mapa">✕</button>
+            <img src="imagenes/impacto-mapa-lima.png" alt="Mapa ampliado">
+            <div class="modal-leyenda">
+                <p><strong>Distritos atendidos:</strong> Zonas en verde son áreas donde hemos intervenido.</p>
+            </div>
+        </div>
+    </div>
+</div>

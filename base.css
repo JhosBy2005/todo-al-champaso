@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+/* Páginas */
+.pagina {
+    display: none;
+    min-height: calc(100vh - 100px);
+    padding: 2rem;
+}
+
+.pagina.activa {
+    display: block;
+}

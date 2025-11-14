@@ -1,0 +1,22 @@
+<div class="encabezado">
+    <div class="contenido-encabezado">
+        <div class="contenedor-logo" onclick="mostrarPagina('inicio')">
+            <div class="icono-logo">
+                <img src="imagenes/logo.png" alt="SeedAir Logo">
+            </div>
+            <div class="texto-logo">SeedAir</div>
+        </div>
+        <button class="boton-menu" onclick="alternarMenu()">☰</button>
+        <div class="menu-navegacion" id="menuNav">
+            <button class="item-menu" onclick="mostrarPagina('inicio')">🏠 Inicio</button>
+            <button class="item-menu menu-protegido" onclick="verificarAcceso('campanias')" style="display: none;">🌳 Campañas</button>
+            <button class="item-menu menu-protegido" onclick="verificarAcceso('reportar')" style="display: none;">📍 Reportar</button>
+            <button class="item-menu menu-protegido" onclick="verificarAcceso('impacto')" style="display: none;">📊 Impacto</button>
+            <button class="item-menu" onclick="mostrarPagina('servicios')">⚙️ Servicios</button>
+            <button class="item-menu" onclick="mostrarPagina('recursos')">📚 Recursos</button>
+            <button class="item-menu" onclick="mostrarPagina('equipo')">👥 Equipo</button>
+            <button class="item-menu" onclick="mostrarPagina('nosotros')">ℹ️ Nosotros</button>
+            <button class="item-menu" onclick="mostrarPagina('contacto')">✉️ Contacto</button>
+        </div>
+    </div>
+</div>

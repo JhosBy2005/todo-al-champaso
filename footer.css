@@ -1,0 +1,113 @@
+/* Pie de página */
+.pie-pagina {
+    background-color: rgba(0,0,0,0.3);
+    padding: 3rem 2rem 1rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.contenido-pie {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.columna-pie {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logo-pie {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo-pie-icono {
+    width: 40px;
+    height: 40px;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-pie-icono img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.columna-pie h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--verde-principal);
+}
+
+.columna-pie a {
+    color: var(--blanco);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.columna-pie a:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.columna-pie p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.campo-suscripcion {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--blanco);
+    color: var(--azul-oscuro);
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.campo-suscripcion::placeholder {
+    color: var(--azul-oscuro);
+    opacity: 0.6;
+}
+
+.boton-suscribir {
+    width: 100%;
+    background-color: var(--verde-principal);
+    color: var(--azul-oscuro);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.boton-suscribir:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.derechos-autor {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
